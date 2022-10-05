@@ -2,65 +2,192 @@
 
 /* CSS RESET */
 *{
-      margin: 0;
-      padding: 0;
-      border: none;
-      outline: none;
-      box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;   
+    outline: none;
+    box-sizing: border-box;
 }
 
 h1,h2,h3,h4,h5,h6{
-    font-family: 'Oswald',sans-serif;
+    font-family: 'Oswald', sans-serif;
 }
 
 p{
     font-family: 'Raleway', sans-serif;
 }
 
-.wrapper
-{
+.wrapper{
     width: 100%;
     margin: auto;
 }
 
-/* Reservation form */
+.nav{
+    overflow: auto;
+    width: 85%;
+    margin: 1em auto;
+}
 
-.reservation{
+.nav h1{
+    font-size: 2em;
+    width: 50%;
+    float: left;
+}
+
+.nav h1 a{
+    color: #96746b;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.nav ul{
+    width: 50%;
+    float: left;
+    text-align: right;
+    margin-top: 1em;
+}
+
+.nav ul li{
+    display: inline;
+    margin-left: 1em;
+}
+
+.nav ul li a{
+    font-family: 'Raleway',sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    color: #312a26;
+}
+
+/* banner section */
+.banner{
+    width: 100%;
+    height: 670px;
+    background-color: brown;
+    background-image: url(../images/banner-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.banner-text{
+    width: 45%;
+    position: absolute;
+    top: 50%;
+    left: 7.5%;
+    transform: translateY(-50%);
+}
+
+.banner-text h2{
+    font-size: 4em;
+    text-transform: uppercase;
+    color: #c7a17a;
+}
+
+.banner-text h2 span{
+    color: #96746b;
+}
+
+.banner-text p{
+    color: #ffffff;
+}
+
+.banner-text a{
+    padding: 1em;
+    background-color: #312a26;
+    font-family: 'Raleway',sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+    text-decoration: none;
+    margin-top: 1em;
+    display: inline-block;
+}
+
+/* ads section */
+.ads{
+    overflow: auto;
     width: 85%;
     margin: 4em auto;
 }
 
-.form-group{
-    background-color: #f2f2f2;
-    width: 49.5%;
+.ads-items{
+    height: 350px;
+    width: 48.5%;
     float: left;
-    margin-right: 1%;
-    padding: 2em;
-    height: 650px;
-    border-radius: 5px;
-    margin-top: 2em;
+    background-size: cover;
+    background-position: center;
+    position: relative;
 }
 
-.form-group:nth-child(2){
-    margin-right: 0;
+.ads-item1{
+    background-image: url(../images/ads-img1.jpg);
+    margin-bottom: 3%;
+    margin-right: 3%;
 }
 
-form{
-    overflow: auto;
+.ads-item2{
+    background-image: url(../images/ads-img2.jpg);
 }
 
+.ads-text{
+    width: 40%;
+    top: 30%;
+    left: 10%;
+    position: absolute;
+}
+
+.ads-text h3{
+    text-transform: uppercase;
+    font-size: 2em;
+    line-height: 1.2em;
+    text-shadow: 3px 3px 6px #312a26;
+    color: #ffffff;
+}
+
+.ads-text a{
+    color: #ffffff;
+    text-shadow: 3px 3px 6px #312a26;
+    text-transform: uppercase;
+    font-family: 'Raleway',sans-serif;
+    font-weight: 700;
+    margin-top: 1em;
+    display: inline-block;
+}
+
+form input[type="submit"]
+{
+    background-color: #c7a17a;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+form input,
+form label,
+form select,
+form textarea
+{
+    font-family: 'Raleway',san-sarif;
+    display: inline-block;
+    width: 100%;
+    padding: 1em;
+    margin-bottom:1em ;
+}
+
+
+
+/* FOOTER SECTION */
 .footer{
     background-image: url(../images/footer-img.jpg);
-    background-image: cover;
+    background-size: cover;
     background-position: center;
     padding-top: 2em;
     padding-bottom: 2em;
 }
 
 .footer-contents{
-    overflow: auto;
     width: 85%;
     margin: auto;
+    overflow: auto;
 }
 
 .footer-widgets{
@@ -77,11 +204,10 @@ form{
     color: #ffffff;
     text-transform: uppercase;
     margin-top: 1em;
-    margin-bottom: 1em; 
-    text-shadow: 3px 3px 6px #312a26;  
+    margin-bottom: 1em;
 }
 
-.footer-widgets h4{
+.footer-contents h4{
     color: #ffffff;
 }
 
@@ -90,8 +216,8 @@ form{
 }
 
 .footer-widgets th,td{
-    color: #fff;
-    font-family: 'Raleway', sans-serif;
+    color: #ffffff;
+    font-family: 'Raleway',sans-serif;
     text-shadow: 3px 3px 6px #312a26;
 }
 
@@ -102,14 +228,14 @@ form{
 .footer-social{
     background-color: #19100f;
     padding: 1em 7.5%;
-    color: #fff;
+    color: #ffffff;
     overflow: auto;
 }
 
 .social-widget{
     width: 32.66%;
-    float: left;
     text-align: center;
+    float: left;
 }
 
 .social-widget img{
